@@ -1,0 +1,18 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 50vw;
+  margin: auto;
+  background-color: #f8f9fa;
+}
+.App input {
+  margin: 0.7rem;
+  height: 2rem;
+  width: 9rem;
+}
+.App button {
+  margin: 0.7rem;
+  height: 2rem;
+  width: 5rem;
+  font-weight: bold;
+}

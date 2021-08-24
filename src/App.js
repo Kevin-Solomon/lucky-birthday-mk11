@@ -23,6 +23,8 @@ export default function App() {
       <h1>Enter Your Birthdate and lucky number to continue...</h1>
       <label for="date">Select your Birth date :</label>
       <br />
+      <h1>Privacy note</h1>
+      <h2>We are not storing your birthdate</h2>
       <form
         onSubmit={(e) => {
           console.log("sike");

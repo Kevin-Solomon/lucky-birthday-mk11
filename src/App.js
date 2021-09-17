@@ -30,6 +30,10 @@ export default function App() {
           console.log("sike");
           e.preventDefault();
           getSumofDoB(doB);
+          if (favNum < 0) {
+            setWords("Enter proper value");
+            return;
+          }
           if (sumOfDoB % favNum === 0) {
             setImage(
               "https://codesandbox.io/api/v1/sandboxes/rv9hp/fs/src/happy.svg"
@@ -56,6 +60,7 @@ export default function App() {
         <label for="num">Enter your Lucky Number:</label>
         <br />
         <input
+          min="1"
           required
           id="num"
           value={favNum}
@@ -67,6 +72,41 @@ export default function App() {
         <button type="submit">Check</button>
       </form>
       <Message img={img} words={words} />
+      <footer className="footer">
+        <div className="footer-header">contact me</div>
+        <ul className="social-links list-non-bullet ">
+          <li className="list-item-inline">
+            <a
+              className="link"
+              href="https://github.com/Kevin-Solomon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github
+            </a>
+          </li>
+          <li className="list-item-inline">
+            <a
+              className="link"
+              href="https://www.linkedin.com/in/kevin-solomon-8b2b2b1a5/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin
+            </a>
+          </li>
+          <li className="list-item-inline">
+            <a
+              className="link"
+              href="https://twitter.com/kevinsolomon777"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              twitter
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
   );
 }
